@@ -7,6 +7,12 @@
   "author": "Mikazuki <mikazuki_fuyuno@outlook.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "start": "parcel serve public/index.html",
+    "build": "parcel build public/index.html",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@storybook/addon-actions": "^5.2.4",
