@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-const Square = () => {
+const CircleEllipse = () => {
   const canvas = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -20,4 +20,4 @@ const Square = () => {
   );
 };
 
-export default Square;
+export default CircleEllipse;

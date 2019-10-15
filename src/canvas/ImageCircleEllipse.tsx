@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-const ImageCircle = () => {
+const ImageCircleEllipse = () => {
   const canvas = useRef<HTMLCanvasElement>(null);
   const image = useRef<HTMLImageElement>(null);
 
@@ -35,4 +35,4 @@ const ImageCircle = () => {
   );
 };
 
-export default ImageCircle;
+export default ImageCircleEllipse;
