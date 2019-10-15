@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-const Image = () => {
+const ImageCircle = () => {
   const canvas = useRef<HTMLCanvasElement>(null);
   const image = useRef<HTMLImageElement>(null);
 
@@ -13,11 +13,14 @@ const Image = () => {
       });
     };
 
-    const ctx = canvas.current!.getContext("2d")!;
     onLoadedImage().then(() => {
-      // assets image is too large for rendering on storybook, crop it
-      // see also: https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage
-      ctx.drawImage(image.current!, 10, 10, 1024, 1280, 10, 10, 124 * 2, 128 * 2);
+      const ctx = canvas.current!.getContext("2d")!;
+
+      ctx.ellipse(105, 105, 100, 100, Math.PI / 4, 0, Math.PI * 2);
+      ctx.clip();
+
+      // クリップされているのをみたいので、あえて画像は crop せずに全体を表示しておく
+      ctx.drawImage(image.current!, 10, 10, 1024, 1280, -170, -90, 124 * 5, 128 * 5);
     });
 
     return () => {};
@@ -32,4 +35,4 @@ const Image = () => {
   );
 };
 
-export default Image;
+export default ImageCircle;
