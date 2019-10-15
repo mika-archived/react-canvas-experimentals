@@ -17,7 +17,7 @@ const SquareAnimation = () => {
     onLoadedImage().then(() => {
       // assets image is too large for rendering on storybook, crop it
       // see also: https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage
-      ctx.drawImage(image.current!, 10, 10, 1024, 1280, 10, 10, 280, 280);
+      ctx.drawImage(image.current!, 10, 10, 1024, 1280, 10, 10, 124 * 2, 128 * 2);
     });
 
     return () => {};
