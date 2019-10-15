@@ -15,15 +15,14 @@
   },
   "globals": {
     "addEventListener": true,
+    "cancelAnimationFrame": true,
     "document": true,
+    "requestAnimationFrame": true,
     "window": true
   },
   "rules": {
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": [
-      "error",
-      { "argsIgnorePattern": "^_" }
-    ],
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
     "import/no-extraneous-dependencies": [
       "error",
       {
