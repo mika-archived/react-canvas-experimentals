@@ -1,0 +1,37 @@
+{
+  "name": "@mikazuki/react-canvas-experimentals",
+  "version": "1.0.0",
+  "description": "React + Canvas",
+  "main": "dist/index.js",
+  "repository": "ssh://git@github.com/mika-sandbox/react-canvas-experimentals.git",
+  "author": "Mikazuki <mikazuki_fuyuno@outlook.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/react": "^16.9.6",
+    "@types/react-dom": "^16.9.2",
+    "@types/styled-components": "^4.1.19",
+    "@typescript-eslint/eslint-plugin": "^2.4.0",
+    "@typescript-eslint/parser": "^2.4.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.1.2",
+    "prettier": "^1.18.2",
+    "stylelint": "^11.1.1",
+    "stylelint-config-prettier": "^6.0.0",
+    "stylelint-config-recess-order": "^2.0.3",
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-processor-styled-components": "^1.8.0",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "styled-components": "^4.4.0"
+  }
+}
