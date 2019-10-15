@@ -6,7 +6,7 @@ const BorderSquare = () => {
   useEffect(() => {
     const ctx = canvas.current!.getContext("2d")!;
 
-    const drawBorderedSquare = (x: number, y: number, height: number, width: number, borderRadius: number) => {
+    const drawRoundedSquare = (x: number, y: number, height: number, width: number, borderRadius: number) => {
       // 自分でそれっぽい形を描くのデース！
       ctx.beginPath();
       ctx.moveTo(x + borderRadius, y);
@@ -22,7 +22,7 @@ const BorderSquare = () => {
       ctx.stroke();
     };
 
-    drawBorderedSquare(10, 10, 110, 110, 10);
+    drawRoundedSquare(10, 10, 110, 110, 10);
 
     return () => {};
   });
